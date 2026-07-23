@@ -48,7 +48,7 @@ The search is performed within the hotkey..
 * [HKEY_CURRENT_USER\SOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
 * [HKEY_LOCAL_MACHINE\SOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
 
-Once the search is complete, the existence of the file associated with the invalid registry entry can be checked. Deleting registry entries should be approached with caution; before doing so, you must be certain whether or not the key is truly invalid.
+Once the search is complete, the existence of the file associated with the invalid registry entry can be checked. Deleting registry entries should be approached with caution; before doing so, you must be certain whether or not the key is truly invalid. For this reason, two of these hotkey paths for deletion are disabled and must be enabled manually.
 
 </br>
 </br>
