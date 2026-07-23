@@ -51,7 +51,6 @@ The search is performed within the hotkey..
 Once the search is complete, the existence of the file associated with the invalid registry entry can be checked. Deleting registry entries should be approached with caution; before doing so, you must be certain whether or not the key is truly invalid. For this reason, two of these hotkey paths for deletion are disabled and must be enabled manually.
 
 </br>
-</br>
 
 # Registry damage:
 Some Registry cleaners make no distinction as to the severity of the errors, and many that do may erroneously categorize errors as "critical" with little basis to support it. Removing or changing certain Registry data can prevent the system from starting, or cause application errors and crashes.
