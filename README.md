@@ -54,7 +54,7 @@ Most Registry cleaners cannot repair scenarios such as undeletable Registry keys
 ### Set Token Privilege:
 Example of setting privileges: to have specific keys removed.
 
-### :speech_balloon:: Code example
+### :speech_balloon: Code example
 
 ```pascal
 function SetTokenPrivilege(const APrivilege: string; const AEnable: Boolean): Boolean;
