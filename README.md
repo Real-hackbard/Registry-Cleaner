@@ -25,6 +25,10 @@ This is an example of how to search for such entries in the registry and remove 
 * HKEY_CLASSES_ROOT
 * HKEY_CURRENT_USER
 * HKEY_LOCAL_MACHINE
+
+### Delete keys
+* The ```HKEY_CLASSES_ROOT``` and ```HKEY_CURRENT_USER``` keys are disabled and must be enabled manually if values ​​within them are to be deleted.
+
 ### Features:
 * Clear Temp Files
 * Uninstall Programs
