@@ -143,7 +143,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninsta
 # :wrench: Jump to Registry key
 To automatically open Regedit and navigate to a specific registry key using Delphi, you can use the ```ShellExecuteInfoA``` function.
 
-Once the cleaner has finished its search, double-clicking an item in the list opens the corresponding registry key in the editor.
+Once the cleaner has finished its search, double-clicking an item in the list opens the corresponding registry key in the editor. The Jumper automatically locates and highlights the key. If the key does not exist, only the folder where the key was located is opened.
 
 ### :speech_balloon: Code example
 
