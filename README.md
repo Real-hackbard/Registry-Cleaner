@@ -42,7 +42,15 @@ This is an example of how to search for such entries in the registry and remove 
 </br>
 </br>
 
-### Registry damage:
+The search is performed within the hotkey..
+
+* [HKEY_CLASSES_ROOT\SOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/hkey-classes-root-key)
+* [HKEY_CURRENT_USERSOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
+* [HKEY_LOCAL_MACHINESOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
+
+
+
+# Registry damage:
 Some Registry cleaners make no distinction as to the severity of the errors, and many that do may erroneously categorize errors as "critical" with little basis to support it. Removing or changing certain Registry data can prevent the system from starting, or cause application errors and crashes.
 
 It is not always possible for a third-party program to know whether any particular key is invalid or redundant. A poorly designed Registry cleaner may not be equipped to know for sure whether a key is still being used by Windows or what detrimental effects removing it may have. This may lead to loss of functionality and/or system instability, As well as [application compatibility updates](https://en.wikipedia.org/wiki/Shim_(computing)) from Microsoft to block problematic Registry cleaners. The [Windows Installer](https://en.wikipedia.org/wiki/Windows_Installer) CleanUp Utility was a Microsoft-supported utility for addressing Windows Installer related issues.
