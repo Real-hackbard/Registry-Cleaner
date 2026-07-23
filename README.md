@@ -125,15 +125,19 @@ To uninstall a program using a registry key, locate the UninstallString within t
 * Locate the Registry Key:
 Open the Registry Editor (regedit.exe) and navigate to:
 
+</br>
+
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall for 64-bit programs on 64-bit Windows.
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall for 32-bit programs on 64-bit Windows. 
 ```
 
+</br>
+
 * Find the Program: Look for a subkey within Uninstall that corresponds to the program you want to uninstall. You can often identify it by its DisplayName value. 
 * Find the UninstallString: Inside the subkey, locate the UninstallString value. 
 * Run the Command:
-* The UninstallString value contains the command to uninstall the program. It might look like MsiExec.exe /X{GUID} or C:\Program Files\...\uninstall.exe. Execute this command using cmd.exe or by double-clicking it in the registry editor.
+* The UninstallString value contains the command to uninstall the program. It might look like ```MsiExec.exe /X{GUID}``` or ```C:\Program Files\...\uninstall.exe```. Execute this command using cmd.exe or by double-clicking it in the registry editor.
 * Backup the Registry: Before making any changes to the registry, it's recommended to back it up. Incorrect registry modifications can cause system instability. 
 * Use with Caution: Be extremely careful when working with the registry. Only modify or delete entries if you are instructed to do so by a trusted source. 
 * Alternative Uninstall Methods: If you can't find the UninstallString or if the command doesn't work, consider using the built-in Windows Programs and Features (Add/Remove Programs) or the program's own uninstaller. 
