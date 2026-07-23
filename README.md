@@ -22,9 +22,9 @@ The correction of an invalid Registry key (such as one or more that remain after
 This is an example of how to search for such entries in the registry and remove them. The prerequisite is that the program has administrator privileges to remove all found entries.
 
 ### The master keys are searched:
-* HKEY_CLASSES_ROOT
-* HKEY_CURRENT_USER
-* HKEY_LOCAL_MACHINE
+* [HKEY_CLASSES_ROOT](https://learn.microsoft.com/en-us/windows/win32/sysinfo/hkey-classes-root-key)
+* [HKEY_CURRENT_USER](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
+* [HKEY_LOCAL_MACHINE](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
 
 ### Delete keys
 * The ```HKEY_CLASSES_ROOT``` and ```HKEY_CURRENT_USER``` keys are disabled and must be enabled manually if values ​​within them are to be deleted.
