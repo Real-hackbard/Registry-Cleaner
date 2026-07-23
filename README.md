@@ -32,7 +32,7 @@ This is an example of how to search for such entries in the registry and remove 
 ### Features:
 * [Clear Temp Files](https://en.wikipedia.org/wiki/Temporary_file)
 * [Uninstall Programs](https://en.wikipedia.org/wiki/Uninstaller)
-* Check file exists
+* [Check file exists](https://learn.microsoft.com/de-de/dotnet/api/system.io.file.exists?view=net-10.0)
 * [Registry Jumper](https://en.wikipedia.org/wiki/Windows_Registry)
 
 </br>
