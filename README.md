@@ -48,6 +48,7 @@ The search is performed within the hotkey..
 * [HKEY_CURRENT_USER\SOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
 * [HKEY_LOCAL_MACHINE\SOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
 
+Once the search is complete, the existence of the file associated with the invalid registry entry can be checked.
 
 
 # Registry damage:
