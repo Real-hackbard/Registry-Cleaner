@@ -109,7 +109,7 @@ end;
 </br>
 </br>
 
-# Temporary files:
+# :wrench: Temporary files:
 Temporary files are data files created by programs or operating systems to hold information temporarily while a process runs, such as during software installations or updates, or for functions like undo/redo. While most are deleted automatically when no longer needed, some may accumulate and take up disk space. Deleting these unneeded temporary files can free up disk space and improve computer performance. 
 
 ### Why temporary files are created:
@@ -118,15 +118,17 @@ Temporary files are data files created by programs or operating systems to hold 
 * State preservation: Temporary files can preserve the state of a software application. 
 * Data recovery: Some temporary files contain data that helps recover lost information. 
 
-# Uninstaller:
+# :wrench: Uninstaller:
 To uninstall a program using a registry key, locate the UninstallString within the Uninstall key for the specific program in the registry editor. The UninstallString contains the command (usually msiexec.exe) and parameters needed to uninstall the program. Running this command will initiate the program's uninstallation process. 
 
 * Locate the Registry Key:
 Open the Registry Editor (regedit.exe) and navigate to:
+
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall for 64-bit programs on 64-bit Windows.
 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall for 32-bit programs on 64-bit Windows. 
 ```
+
 * Find the Program: Look for a subkey within Uninstall that corresponds to the program you want to uninstall. You can often identify it by its DisplayName value. 
 * Find the UninstallString: Inside the subkey, locate the UninstallString value. 
 * Run the Command:
