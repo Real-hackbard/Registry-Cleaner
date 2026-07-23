@@ -32,6 +32,8 @@ This is an example of how to search for such entries in the registry and remove 
 ### Features:
 * Clear Temp Files
 * Uninstall Programs
+* Check file exists
+* Registry Jumper
 
 </br>
 
