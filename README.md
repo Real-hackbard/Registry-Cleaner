@@ -34,6 +34,7 @@ This is an example of how to search for such entries in the registry and remove 
 <img src="https://github.com/user-attachments/assets/77a30127-26a5-48aa-89ff-b68c1c1c76f0" />
 
 </br>
+</br>
 
 ### Registry damage:
 Some Registry cleaners make no distinction as to the severity of the errors, and many that do may erroneously categorize errors as "critical" with little basis to support it. Removing or changing certain Registry data can prevent the system from starting, or cause application errors and crashes.
@@ -51,7 +52,9 @@ Rogue Registry cleaners are often marketed with alarmist advertisements that fal
 ### Undeletable registry keys:
 Most Registry cleaners cannot repair scenarios such as undeletable Registry keys caused by embedded null characters in their names; only specialized tools such as the RegDelNull utility (part of the free [Sysinternals software](https://en.wikipedia.org/wiki/Sysinternals)) are able to do this.
 
-### Set Token Privilege:
+</br>
+
+# Set Token Privilege:
 Example of setting privileges: to have specific keys removed.
 
 ### :speech_balloon: Code example
@@ -87,8 +90,9 @@ end;
 ```
 
 </br>
+</br>
 
-### Temporary files:
+# Temporary files:
 Temporary files are data files created by programs or operating systems to hold information temporarily while a process runs, such as during software installations or updates, or for functions like undo/redo. While most are deleted automatically when no longer needed, some may accumulate and take up disk space. Deleting these unneeded temporary files can free up disk space and improve computer performance. 
 
 ### Why temporary files are created:
@@ -97,7 +101,7 @@ Temporary files are data files created by programs or operating systems to hold 
 * State preservation: Temporary files can preserve the state of a software application. 
 * Data recovery: Some temporary files contain data that helps recover lost information. 
 
-### Uninstaller:
+# Uninstaller:
 To uninstall a program using a registry key, locate the UninstallString within the Uninstall key for the specific program in the registry editor. The UninstallString contains the command (usually msiexec.exe) and parameters needed to uninstall the program. Running this command will initiate the program's uninstallation process. 
 
 * Locate the Registry Key:
