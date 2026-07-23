@@ -45,8 +45,8 @@ This is an example of how to search for such entries in the registry and remove 
 The search is performed within the hotkey..
 
 * [HKEY_CLASSES_ROOT\SOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/hkey-classes-root-key)
-* [HKEY_CURRENT_USERSOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
-* [HKEY_LOCAL_MACHINESOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
+* [HKEY_CURRENT_USER\SOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
+* [HKEY_LOCAL_MACHINE\SOFTWARE\..](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
 
 
 
