@@ -1,4 +1,4 @@
-# Registry-Cleaner:
+# :computer: Registry-Cleaner:
 
 </br>
 
@@ -31,7 +31,7 @@ This is an example of how to search for such entries in the registry and remove 
 
 </br>
 
-![Registry Cleaner](https://github.com/user-attachments/assets/1e49aa9a-2242-4009-ab86-f8b9657c1b91)
+<img src="https://github.com/user-attachments/assets/77a30127-26a5-48aa-89ff-b68c1c1c76f0" />
 
 </br>
 
@@ -53,6 +53,8 @@ Most Registry cleaners cannot repair scenarios such as undeletable Registry keys
 
 ### Set Token Privilege:
 Example of setting privileges: to have specific keys removed.
+
+# ::speech_balloon:: Code example
 
 ```pascal
 function SetTokenPrivilege(const APrivilege: string; const AEnable: Boolean): Boolean;
