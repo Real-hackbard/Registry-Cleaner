@@ -27,7 +27,7 @@ This is an example of how to search for such entries in the registry and remove 
 * [HKEY_LOCAL_MACHINE](https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys)
 
 ### Delete keys
-* The ```HKEY_CLASSES_ROOT``` and ```HKEY_CURRENT_USER``` keys are disabled and must be enabled manually if values ​​within them are to be deleted.
+* The ```HKEY_CLASSES_ROOT``` and ```HKEY_CURRENT_USER``` keys are DISABLED and must be enabled manually if values ​​within them are to be deleted.
 
 ### Features:
 * Clear Temp Files
