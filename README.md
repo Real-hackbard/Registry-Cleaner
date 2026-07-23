@@ -30,10 +30,10 @@ This is an example of how to search for such entries in the registry and remove 
 * The ```HKEY_CLASSES_ROOT``` and ```HKEY_CURRENT_USER``` keys are DISABLED and must be enabled manually if values ​​within them are to be deleted.
 
 ### Features:
-* Clear Temp Files
-* Uninstall Programs
+* [Clear Temp Files](https://en.wikipedia.org/wiki/Temporary_file)
+* [Uninstall Programs](https://en.wikipedia.org/wiki/Uninstaller)
 * Check file exists
-* Registry Jumper
+* [Registry Jumper](https://en.wikipedia.org/wiki/Windows_Registry)
 
 </br>
 
