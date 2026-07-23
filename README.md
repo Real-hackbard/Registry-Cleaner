@@ -115,7 +115,9 @@ Temporary files are data files created by programs or operating systems to hold 
 * Intermediate storage: Programs use them to hold data that is being processed or moved to a permanent file. 
 * Caching: They can store frequently accessed data for faster retrieval. 
 * State preservation: Temporary files can preserve the state of a software application. 
-* Data recovery: Some temporary files contain data that helps recover lost information. 
+* Data recovery: Some temporary files contain data that helps recover lost information.
+
+</br>
 
 # :wrench: Uninstaller:
 To uninstall a program using a registry key, locate the UninstallString within the Uninstall key for the specific program in the registry editor. The UninstallString contains the command (usually msiexec.exe) and parameters needed to uninstall the program. Running this command will initiate the program's uninstallation process. 
@@ -135,3 +137,65 @@ HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninsta
 * Backup the Registry: Before making any changes to the registry, it's recommended to back it up. Incorrect registry modifications can cause system instability. 
 * Use with Caution: Be extremely careful when working with the registry. Only modify or delete entries if you are instructed to do so by a trusted source. 
 * Alternative Uninstall Methods: If you can't find the UninstallString or if the command doesn't work, consider using the built-in Windows Programs and Features (Add/Remove Programs) or the program's own uninstaller. 
+
+</br>
+
+# :wrench: Jump to Registry key
+To automatically open Regedit and navigate to a specific registry key using Delphi, you can use the ```ShellExecuteInfoA``` function.
+
+### :speech_balloon: Code example
+
+```pascal
+procedure TForm1.JumpToKey(Key: string);
+var
+  i, n: Integer;
+  hWin: HWND;
+  ExecInfo: ShellExecuteInfoA;
+begin
+  hWin := FindWindowA(PChar('RegEdit_RegEdit'), nil);
+  if hWin = 0 then
+  {if Regedit doesn't run then we launch it}
+  begin
+    FillChar(ExecInfo, 60, #0);
+    with ExecInfo do
+    begin
+      cbSize := 60;
+      fMask  := SEE_MASK_NOCLOSEPROCESS;
+      lpVerb := PChar('open');
+      lpFile := PChar('regedit.exe');
+      nShow  := 1;
+    end;
+    ShellExecuteExA(@ExecInfo);
+    WaitForInputIdle(ExecInfo.hProcess, 200);
+    hWin := FindWindowA(PChar('RegEdit_RegEdit'), nil);
+  end;
+  ShowWindow(hWin, SW_SHOWNORMAL);
+  hWin := FindWindowExA(hWin, 0, PChar('SysTreeView32'), nil);
+  SetForegroundWindow(hWin);
+  i := 30;
+  repeat
+    SendMessageA(hWin, WM_KEYDOWN, VK_LEFT, 0);
+    Dec(i);
+  until i = 0;
+  Sleep(500);
+  SendMessageA(hWin, WM_KEYDOWN, VK_RIGHT, 0);
+  Sleep(500);
+  i := 1;
+  n := Length(Key);
+  repeat
+    if Key[i] = '\' then
+    begin
+      SendMessageA(hWin, WM_KEYDOWN, VK_RIGHT, 0);
+      Sleep(500);
+    end
+    else
+      SendMessageA(hWin, WM_CHAR, Integer(Key[i]), 0);
+    i := i + 1;
+  until i = n;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+ JumpToKey(Edit1.Text);
+end;
+```
